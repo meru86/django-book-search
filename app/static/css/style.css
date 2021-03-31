@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f1f1;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.booklist img {
+    height: 200px;
+    object-fit: contain;  /* 置換要素、例えば <img> や <video> などの中身を、コンテナーにどのようにはめ込むかを設定します。  */
+}
+
+.star-rating {
+    position: relative;
+    font-size: 20px;
+    word-wrap: normal!important;
+}
+
+.star-rating-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.star-rating-book {
+    color: #CCCCCC;
+}
+
+.average {
+    font-size: 20px;
+    font-weight: bold;
+}
